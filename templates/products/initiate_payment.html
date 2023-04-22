@@ -1,0 +1,22 @@
+{% extends 'products/base.html'%}
+{% load crispy_forms_tags%}
+{% load static %}
+{% block content%}
+<br/>
+
+<div class="container">
+    <div class="d-flex row justify-content-center align-items-center py-md-5 py-3" style="min-height:90vh">
+        <div class="'col-12">
+            <form action="." method="POST"
+                <h4>Enter Amount</h4>
+                </br>
+                {% csrf_token %}
+                {{ payment_form | crispy }}
+                <p>
+                <input class="btn btn_primary" type="submit" value="submit">
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}

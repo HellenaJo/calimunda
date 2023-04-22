@@ -1,0 +1,11 @@
+#functionality of the dawa application
+'''
+login 
+logout
+index page
+stock
+sales report
+stock listing
+receipts
+
+'''
